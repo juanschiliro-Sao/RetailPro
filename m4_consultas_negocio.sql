@@ -95,8 +95,7 @@ SELECT * FROM clientes;
 SELECT * FROM productos;
 SELECT * FROM ventas;
 
-
---Consulta 1 — Resumen ejecutivo mensual
+--Consulta 1: Resumen ejecutivo mensual 
 
 SELECT
 DATEPART (MONTH, fecha_venta) AS Mes,	
@@ -111,8 +110,7 @@ GROUP BY
 
 DATEPART (MONTH, fecha_venta);
 
-
---Consulta 2 — Ranking de productos
+--Consulta 2: Ranking de productos
 
 SELECT TOP 5
 
@@ -127,7 +125,7 @@ id_producto
 ORDER BY
 Total_Facturado DESC;
 
---Consulta 3 — Clientes recurrentes
+--Consulta 3:  Clientes recurrentes 
 
 SELECT
 id_cliente AS Codigo_del_cliente,
@@ -146,9 +144,9 @@ HAVING
  ORDER BY
  Total_Facturado DESC;
 
- --Consulta 4 — Meses por encima/por debajo del promedio
+ --Consulta 4: Meses por encima/por debajo del promedio 
 
-SELECT 
+ SELECT 
     DATEPART(month, fecha_venta) AS Numero_Mes,
     SUM(cantidad * precio_unitario) AS Total_Facturado_Mensual,
     (
@@ -178,11 +176,31 @@ ORDER BY
     Numero_Mes ASC;
 
 
-    --BLOQUE DE CIERRE: HALLAZGOS DEL ANÁLISIS DE VENTAS
+--BLOQUE DE CIERRE: HALLAZGOS DEL ANÁLISIS DE VENTAS
 -- =========================================================================
--- 1. La facturación del mes de Diciembre supera en un 45% al promedio mensual general, impulsada por la estacionalidad de las fiestas.
--- 2. El 60% de los meses del año fiscal quedaron catalogados 'Por debajo' del promedio general, lo que demuestra una alta dependencia de trimestres específicos.
--- 3. Los meses de invierno (Junio y Julio) representan el valle de facturación más bajo, quedando un 30% por debajo de la media mensual calculada.
+-- 1. Se puede visualizar que el producto: Mouse Inalambrico es el producto mas vendido; asi como el Teclado Mecanico es el 2º con mas unidades vendidas. .
+-- 2. El Mes 3 es el mes que mas facturo ya que vendio 10 unidades por un total de: $6444.00.
+-- 3. Podemos ver que en cuanto a los clientes: Maria Lopez es la cliente que mas gasto, ya que realizo dos pedidos con un total de $2640; Laura Torres es la otra clienta que mas gasto con la misma cantidad de pedidos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
