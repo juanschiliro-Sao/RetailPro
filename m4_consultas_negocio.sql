@@ -181,7 +181,7 @@ ORDER BY
 -- 1. Se puede visualizar que el producto: Mouse Inalambrico es el producto mas vendido; asi como el Teclado Mecanico es el 2º con mas unidades vendidas. .
 -- 2. El Mes 3 es el mes que mas facturo ya que vendio 10 unidades por un total de: $6444.00.
 -- 3. Podemos ver que en cuanto a los clientes: Maria Lopez es la cliente que mas gasto, ya que realizo dos pedidos con un total de $2640; Laura Torres es la otra clienta que mas gasto con la misma cantidad de pedidos.
-
+-- 4. El ejercicio no solicita una archivo Readme. 
 
 
 
